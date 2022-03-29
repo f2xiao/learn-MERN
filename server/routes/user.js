@@ -4,9 +4,9 @@ import {
 	findUserById,
 	findUserProfile,
 	deleteUser
-} from '../controllers/user';
+} from '../controllers/user.js';
 
-import { requireSignin, hasAuthorization } from '../controllers/auth';
+import { requireSignin, hasAuthorization } from '../controllers/auth.js';
 const router = express.Router();
 
 router.route('/api/users').post(registerUser);

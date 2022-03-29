@@ -1,5 +1,5 @@
-import User from '../models/user';
-import errorHandler from '../helpers/dbErrorHandler';
+import User from '../models/user.js';
+import errorHandler from '../helpers/dbErrorHandler.js';
 
 export const registerUser = (req, res, next) => {
 	const user = new User(req.body);

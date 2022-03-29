@@ -1,12 +1,12 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
-import config from './server/config';
+import config from './server/config/index.js';
 // ADD these
-import userRoutes from './server/routes/user';
-import authRoutes from './server/routes/auth';
+import userRoutes from './server/routes/user.js';
+import authRoutes from './server/routes/auth.js';
 
 // DB connection
-require('./server/models');
+import './server/models/index.js';
 
 const app = express();
 

@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const URI = require('../config/index');
+import mongoose from 'mongoose';
+import config from  '../config/index.js';
 
-mongoose.connect(process.env.MONGODB_URI || URI);
+mongoose.connect(config.URI,{ useNewUrlParser: true, useUnifiedTopology: true });
 
 // When successfully connected
 mongoose.connection.on('connected', () => {
