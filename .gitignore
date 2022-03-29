@@ -105,3 +105,6 @@ dist
 
 # RESTFUL test
 *.http
+
+# API keys in config
+config/
